@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://eekqvwgpjt6e"]
+
+[ext_resource type="Script" uid="uid://cijrjbr6kd0oj" path="res://texture_button.gd" id="1_a215r"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 31.0
+
+[node name="LineEdit" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 31.0
+offset_right = 1152.0
+offset_bottom = 31.0
+
+[node name="TextureButton" type="TextureButton" parent="Panel"]
+layout_mode = 0
+offset_right = 31.0
+offset_bottom = 31.0
+script = ExtResource("1_a215r")
+
+[connection signal="pressed" from="Panel/TextureButton" to="Panel/TextureButton" method="_on_pressed"]
+[connection signal="ready" from="Panel/TextureButton" to="Panel/TextureButton" method="_on_ready"]
