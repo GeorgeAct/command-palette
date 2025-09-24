@@ -3,8 +3,8 @@ extends TextureButton
 @onready var active = false
 
 var textures = {
-	true : "res://Textures/Buttons/Dropdown2.png",
-	false: "res://Textures/Buttons/Dropdown1.png"
+	true : "./CommandPallete/Textures/Buttons/Dropdown2.png",
+	false: "./CommandPallete/Textures/Buttons/Dropdown1.png"
 }
 
 func switch_texture() -> void:

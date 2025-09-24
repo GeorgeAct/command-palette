@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://lnh7j2ujjduv"]
+[gd_scene load_steps=3 format=3 uid="uid://lnh7j2ujjduv"]
+
+[ext_resource type="PackedScene" uid="uid://eekqvwgpjt6e" path="res://CommandPallete/Scenes/commandpallete.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://ci7ekt8w856bw" path="res://Player/player.tscn" id="2_bo1nx"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_bo1nx")]
+position = Vector2(253, 171)
+SPEED = 400.0
+
+[node name="Control" parent="." instance=ExtResource("1_jjgbg")]
