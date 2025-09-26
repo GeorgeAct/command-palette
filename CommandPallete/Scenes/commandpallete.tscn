@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://eekqvwgpjt6e"]
+[gd_scene load_steps=2 format=3 uid="uid://eekqvwgpjt6e"]
 
-[ext_resource type="Script" uid="uid://cijrjbr6kd0oj" path="res://CommandPallete/Scripts/texture_button.gd" id="1_a215r"]
 [ext_resource type="Script" uid="uid://c5w3yuoukbhh8" path="res://CommandPallete/Scripts/commandpallete.gd" id="1_ikflt"]
 
 [node name="Control" type="Control"]
@@ -25,7 +24,6 @@ offset_bottom = 31.0
 layout_mode = 0
 offset_right = 31.0
 offset_bottom = 31.0
-script = ExtResource("1_a215r")
 
-[connection signal="pressed" from="Panel/TextureButton" to="Panel/TextureButton" method="_on_pressed"]
-[connection signal="ready" from="Panel/TextureButton" to="Panel/TextureButton" method="_on_ready"]
+[connection signal="pressed" from="Panel/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="ready" from="Panel/TextureButton" to="." method="_on_texture_button_ready"]
